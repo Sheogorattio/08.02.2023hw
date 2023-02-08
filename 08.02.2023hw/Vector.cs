@@ -75,5 +75,9 @@ namespace VectorSpace
         {
             return (Length == obj.Length) && ((ValX % obj.ValX == 0 && ValY % obj.ValY == 0 && ValZ % obj.ValZ == 0) || (obj.ValZ % ValZ == 0 && obj.ValY % ValY == 0 && obj.ValX % ValX == 0));
         }
+        public override string ToString()
+        {
+            return $"({ValX} ; {ValY} ; {ValZ})";
+        }
     }
 }

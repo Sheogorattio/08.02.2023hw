@@ -12,7 +12,9 @@ namespace _08._02._2023hw
         static void Main(string[] args)
         {
             Vector A = new Vector(1,2,3);
-            Vector B = new Vector(1,2,3);
+            Vector B = new Vector();
+            B.Init();
+            B.IncreaseBy(10);
             Console.Write($"A coord:");
             A.Print();
             Console.WriteLine("A length:{0:0.00}", A.Length);
